@@ -22,7 +22,6 @@ describe('verify the functionality for Contact Us form', function () {
         cy.get('.feedback-input').eq(3).type('I am learning Cypress')
         cy.get('input[value="RESET"]').click()
         
-        
         cy.get('input[name="first_name').should('have.text',"")
         cy.get('input[name="last_name"]').should('have.text',"")
         cy.get('.feedback-input').should('have.text',"")

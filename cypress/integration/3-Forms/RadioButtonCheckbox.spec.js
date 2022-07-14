@@ -44,7 +44,7 @@ describe('Verify the functionality of checkbox, radio Button and Dropdown', func
     // we can select the drop down values by text and by value attribute
     // conventional drop and the select method will work if the tag is select
 
-    it('Verify the functionality for all the radio buttons', function () {
+    it('Verify the functionality for all the dropdown', function () {
         cy.get('#dropdowm-menu-1').select('Python').should('have.value', 'python')
         cy.get('#dropdowm-menu-1').select('sql').should('have.value', 'sql')
     })
