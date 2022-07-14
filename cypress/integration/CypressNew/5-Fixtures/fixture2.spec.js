@@ -2,8 +2,8 @@
 
 /// <reference types = "cypress" />
 
-import obj from '../../fixtures/contactus.json'
-import {info,info2} from '../../fixtures/contact'
+import obj from '../../../fixtures/contactus.json'
+import {info,info2} from '../../../fixtures/contact'
 
 describe('Describe ways to use the fixture file', function () {
     let data

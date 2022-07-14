@@ -1,4 +1,4 @@
-import { Login } from "../models/login"
+import { Login } from "../../models/login"
 const login = new Login()
 
 describe('testscenario for login functionality', function(){
