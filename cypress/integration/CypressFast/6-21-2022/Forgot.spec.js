@@ -1,4 +1,4 @@
-import { ForgotPassword } from "../models/ForgotPass";
+import { ForgotPassword } from "../models/ForgotPass"
 
 const forgotpass = new ForgotPassword()
 
