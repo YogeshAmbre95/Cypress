@@ -1,0 +1,76 @@
+
+
+Company Name : Citius  Tech
+
+1) Write a program to do addition for even number from 6 to 10
+
+=> let a=6
+let sum=0
+for(let a=6;a<=10;a=a+2){
+    if(a%2==0){
+        sum=sum+a
+    }
+}
+console.log(sum)
+
+
+2) Write object in js and make instance and r etrieve value
+
+class Student {
+    constructor(firstName,lastName,age){
+        this.firstName=firstName
+        this.lastName=lastName
+        this.age=age
+    }
+    display(){
+        console.log(this.firstName+this.lastName)
+    }
+
+let amol=new Student('amol','ambre',12)
+console.log(amol)
+console.log(amol.firstName)
+console.log(amol.lastName)
+
+
+
+3) How to retrieve value in cypress and use it in whole spec file
+
+==> multiple methods to retrive the values
+1) if we need to use value in single file then we will define variable globally
+2) if we need to use values in multiple spec files then we will store value in fixture folder in json format
+and we will call it using cy.fixture commands or we will import it from fixture folder.
+
+
+4) How u handle exceptions in cypress 
+
+==> Cypress.on ('uncaught:exception', (err, runnable) => { return false; });
+
+5) If webelement is not typeable, what u can do=====
+
+=====>  {force:true}
+
+6) There is email, ur name and ur number. How can you retrieve and use it in whole spec file in cypress 
+
+===> 1) if we need to use value in single file then we will define variable globally
+2) if we need to use values in multiple spec files then we will store value in fixture folder in json format
+and we will call it using cy.fixture commands or we will import it from fixture folder.
+
+7) There is dropdown and no select value. How can you click on any drop down value without using if
+
+8) How to add custom commands
+
+==> You can see two '.js' files under support folder, In command.js file you can add your own commands. 
+
+To add a new command, you can use, Cypress.Commands.add('commandName',()=>{ //Implementation }) 
+
+In your test file, you can use cy.commandName() to call your own command in test file.
+
+9) How to retrieve data from fixtures file and use it globally 
+===> we can use cy.fixture command or we will import it using import command
+
+10) Write a map and retrieve values by creating instances
+
+ 
+11) How to automate calendar
+
+https://www.youtube.com/watch?v=oND1ETJEbSc

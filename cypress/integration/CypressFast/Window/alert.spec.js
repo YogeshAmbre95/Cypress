@@ -7,6 +7,7 @@ describe('Javscripts alertd', function () {
     })
 
     it('verify the js alert ', function () {
+        //cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.on('window:alert', function (str) {
             expect(str).to.eqls('I am a JS Alert')
         })
@@ -17,6 +18,7 @@ describe('Javscripts alertd', function () {
     })
 
     it('verify the js confirm - OK ', function () {
+        //cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
         cy.on('window:confirm', function (str) {
             expect(str).to.equal('I am a JS Confirm')
             return true
